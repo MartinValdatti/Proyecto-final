@@ -1,0 +1,376 @@
+/*Espacio dedicado a index.html*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 200px auto 300px ;
+    grid-template-areas:"   navbar      navbar      navbar      navbar"
+                        "   header      header      header      header"
+                        "   main        main        main        main" 
+                        "   pie         pie         pie         pie ";
+}
+h1{
+    font-size: 40px ;
+    margin-left: 400px;
+    font-family: 'Bangers', cursive;
+
+}
+.navbar{
+    grid-area: navbar;
+    background-color: #d4e157;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bangers', cursive;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: 400px;
+
+}
+.navbar ul li{
+    width: 100%;
+    padding: 10px;
+    border-right: 2px solid white;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    
+    
+}
+.navbar ul li a:hover{
+    color: #444
+}
+.main{
+    grid-area: main;
+}
+.headerImg{
+    background-image:url(../img/lineas-movimiento-anchas-rayos-color-azul-oscuro-fondo-espacio-vacio_148157-195.webp);
+    height: 250px;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    
+}
+.header{
+    grid-area: header;
+}
+header p{
+    color: white;
+    text-align: center;
+    
+}
+.tituloHeader{
+    color: white;
+    font-size: 100px;
+}
+
+/*Espacio dedicado a productos.html*/
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tarjetaTitulo{
+    font-size: 23px;
+    margin: 5px 0px;
+}
+.boton{
+    background-color:#288BA8 ;
+    padding: 8px 12px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+}
+.productos{
+    text-align: center;
+    margin: 25px;
+    font-size: 50px;
+}
+
+/*Espacio dedicado a nsotros.html*/
+
+.pie{
+    grid-area: pie;
+    background-color: #E0DECA;
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px;
+    
+}
+footer h4{
+    font-size: 18px;
+    font-family: 'Bangers', cursive;
+    
+}
+footer h5{
+    font-size: 18px;
+}
+.redes img{
+    margin: 10px;
+    display: block;
+    margin-bottom:80px;
+}
+.mapa{
+    margin-left: 0px;
+    font-family: 'Bangers', cursive;
+}
+.btn{
+    background-color:#288BA8 ;
+    padding: 8px 12px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 50%;
+
+
+}
+.comentario{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 400px;
+    justify-content: flex-end;
+}
+textarea{
+    width: 400px;
+    height: 250px;
+    
+}
+/*Espacio dedicado a ofertas.html*/
+.ofertas{
+    text-align: center;
+    margin: 25px;
+    font-size: 50px;
+}
+.comentarios{
+    margin-left: 30px;
+}
+/*Espacio dedicado a categorias.html*/
+.main{
+    margin-bottom: 10%;
+    text-align: center;
+}
+.me{
+    display: block;
+    height: 600px;
+}
+/*Espacio dedicado a celulares*/
+@media (max-width:600px){
+     h1{
+        font-size:30px;
+        margin-left: 0%;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    .tituloHeader{
+        font-size: 50px;
+
+    }
+    .navbar{
+        justify-content: flex-start;
+    }
+    .pie{
+        width: 100%;
+
+    }
+    footer h4{
+        font-size: 18px;
+        font-family: 'Bangers', cursive;
+        
+    }
+    footer h5{
+        font-size: 18px;
+    }
+    .redes img{
+        margin: 10px;
+        display: block;
+        margin-bottom:80px;
+    }
+    .mapa{
+        margin-left: 0px;
+        font-family: 'Bangers', cursive;
+        
+    }
+    iframe{
+        height: 250px ;
+        width: 250px;
+    }
+    .btn{
+        background-color:#288BA8 ;
+        padding: 8px 12px;
+        color: white;
+        border: 0px;
+        border-radius: 5px;
+        width: 50%;
+    
+    
+    }
+    .comentario{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 400px;
+        justify-content: flex-end;
+    }
+    textarea{
+        width: 100px;
+        height: 200px;
+        
+    }
+}
+/*Espacio dedicado a tablets*/
+@media (max-width:768px){
+    h1{
+       font-size:30px;
+       margin-left: 0%;
+   }
+   .navbar ul li a{
+       font-size: 20px;
+   }
+   .tituloHeader{
+       font-size: 50px;
+
+   }
+   .navbar{
+       justify-content: flex-start;
+   }
+   .pie{
+       width: 100%;
+
+   }
+   footer h4{
+       font-size: 18px;
+       font-family: 'Bangers', cursive;
+       
+   }
+   footer h5{
+       font-size: 18px;
+   }
+   .redes img{
+       margin: 10px;
+       display: block;
+       margin-bottom:80px;
+   }
+   .mapa{
+       margin-left: 0px;
+       font-family: 'Bangers', cursive;
+       
+   }
+   iframe{
+       height: 250px ;
+       width: 250px;
+   }
+   .btn{
+       background-color:#288BA8 ;
+       padding: 8px 12px;
+       color: white;
+       border: 0px;
+       border-radius: 5px;
+       width: 50%;
+   
+   
+   }
+   .comentario{
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       max-width: 400px;
+       justify-content: flex-end;
+   }
+   textarea{
+       width: 100px;
+       height: 200px;
+  }
+}
+/*Espacio dedicado a tablets*/
+@media (max-width:1020px){
+    h1{
+       font-size:30px;
+       margin-left: 0%;
+   }
+   .navbar ul li a{
+       font-size: 20px;
+   }
+   .tituloHeader{
+       font-size: 50px;
+
+   }
+   .navbar{
+       justify-content: flex-start;
+   }
+   .pie{
+       width: 100%;
+
+   }
+   footer h4{
+       font-size: 18px;
+       font-family: 'Bangers', cursive;
+       
+   }
+   footer h5{
+       font-size: 18px;
+   }
+   .redes img{
+       margin: 10px;
+       display: block;
+       margin-bottom:80px;
+   }
+   .mapa{
+       margin-left: 0px;
+       font-family: 'Bangers', cursive;
+       
+   }
+   iframe{
+       height: 250px ;
+       width: 250px;
+   }
+   .btn{
+       background-color:#288BA8 ;
+       padding: 8px 12px;
+       color: white;
+       border: 0px;
+       border-radius: 5px;
+       width: 50%;
+   
+   
+   }
+   .comentario{
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       max-width: 400px;
+       justify-content: flex-end;
+   }
+   textarea{
+       width: 100px;
+       height: 200px;
+  }
+}
